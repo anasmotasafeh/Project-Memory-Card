@@ -87,8 +87,8 @@ function App() {
       </div>
       :
       <div>
-        <h1>اعلى نقاط: {arabicFormatter.format(bestScore)}</h1>
         <h1>نقاطك: {arabicFormatter.format(score)}</h1>
+        <h1>اعلى نقاط: {arabicFormatter.format(bestScore)}</h1>
         <h2>{arabicFormatter.format(cards.length)}/{arabicFormatter.format(score)}</h2>
         <div className='button' onClick={restartGame}>اعد المحاولة</div>
       </div> 
