@@ -8,18 +8,29 @@
 }
 
 .card{
-  border: #a30000 solid 3px;
+  border: #7d0202 solid 3px;
   background-color: wheat;
   font-size: 12px;
   border-radius: 9px;
   cursor: pointer;
 
 }
-.card:hover{
-  border-color: wheat;
-  background-color: #a30000;
-  color: wheat;
+@media (hover: hover) {
+  .card:hover {
+    border-color: wheat;
+    background-color: #7d0202;
+    color: wheat;
+  }
 }
+
+@media (hover: none) {
+  .card:active {
+    border-color: wheat;
+    background-color: #7d0202;
+    color: wheat;
+  }
+}
+
 div.scoreboard {
   display: flex;
   justify-content: space-around;
@@ -32,7 +43,7 @@ img{
 }
 
 .button {
-  border: #a30000 solid 3px;
+  border: #7d0202 solid 3px;
   background-color: wheat;
   font-size: 12px;
   border-radius: 9px;
@@ -44,7 +55,7 @@ img{
 }
 .button:hover{
   border-color: wheat;
-  background-color: #a30000;
+  background-color: #7d0202;
   color: wheat;
 }
 
