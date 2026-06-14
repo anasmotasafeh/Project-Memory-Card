@@ -2,6 +2,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
 }
 
 .card{
@@ -10,6 +13,7 @@
   font-size: 12px;
   border-radius: 9px;
   cursor: pointer;
+
 }
 .card:hover{
   border-color: wheat;
@@ -46,3 +50,36 @@ img{
 
 
 
+
+@media (max-width: 768px) {
+  .cards {
+    gap: 8px;
+  }
+
+  .card {
+    width: 90px;
+    height: auto;
+  }
+
+  img{
+    width: 90px;
+    height: auto;
+  }
+
+  .scoreboard {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    font-size: large;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+}
