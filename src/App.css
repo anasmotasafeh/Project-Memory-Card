@@ -1,0 +1,48 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.card{
+  border: #a30000 solid 3px;
+  background-color: wheat;
+  font-size: 12px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.card:hover{
+  border-color: wheat;
+  background-color: #a30000;
+  color: wheat;
+}
+div.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+img{
+  height: 150px;
+  width: auto;
+}
+
+.button {
+  border: #a30000 solid 3px;
+  background-color: wheat;
+  font-size: 12px;
+  border-radius: 9px;
+  padding: 5px 10px;
+  width: max-content;
+  height: auto;
+  font-size: xx-large;
+  cursor: pointer;
+}
+.button:hover{
+  border-color: wheat;
+  background-color: #a30000;
+  color: wheat;
+}
+
+
+
