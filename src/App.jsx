@@ -26,7 +26,7 @@ function App() {
     name,
     url: `https://api.dicebear.com/9.x/adventurer/svg?seed=${name}`,
   }));
-
+  const [harder, setHarder] = useState(false)
   const [cards, setCards] = useState(cardsInfo);
   const [clickedCardsIds, setClickedCardsIds] = useState([])
   const [gameOver, setGameOver] = useState(false)
@@ -96,7 +96,19 @@ function App() {
       <div>
         <h4>اضغط على الصور لكسب نقاط، لكن لا تضغط على صورة اكثر من مره.</h4>
         <Scoreboard score={score} bestScore={bestScore}/>
-        <Cards cards={cards} setGameOver={setGameOver} onClick={handleClick}/>
+        <div className="difficulty-toggle">
+        <span>الوضع الصعب</span>
+
+        <label className="switch">
+          <input
+            type="checkbox"
+            checked={harder}
+            onChange={e => setHarder(e.target.checked)}
+          />
+          <span className="slider"></span>
+        </label>
+      </div>
+        <Cards cards={cards} harder={harder} setGameOver={setGameOver} onClick={handleClick}/>
   
       </div>}
     </>
