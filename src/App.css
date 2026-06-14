@@ -24,13 +24,13 @@
   }
 }
 
-@media (hover: none) {
+/* @media (hover: none) {
   .card:active {
     border-color: wheat;
     background-color: #7d0202;
     color: wheat;
   }
-}
+} */
 
 div.scoreboard {
   display: flex;
